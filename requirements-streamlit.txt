@@ -1,0 +1,27 @@
+# Core Streamlit Framework
+streamlit>=1.30.0
+
+# AWS SDK and Secrets Management
+boto3>=1.28.0
+aws-secretsmanager-caching>=1.1.0
+
+# Data Processing and Display
+pandas>=2.0.0
+
+# HTML/XML Processing for chat components
+beautifulsoup4>=4.12.0
+
+# HTTP Requests (for API communication)
+requests>=2.31.0
+
+# Environment variables
+python-dotenv>=1.0.0
+
+# Additional Streamlit Components
+streamlit-chat>=0.1.0
+streamlit-authenticator>=0.2.0
+
+# UI Components
+plotly>=5.17.0
+altair>=5.1.0
+numpy>=1.24.0

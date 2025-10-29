@@ -1,0 +1,88 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+
+# CDK
+cdk.out/
+node_modules/
+
+# Git
+.git/
+.gitignore
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Sessions (large files)
+sessions/
+
+# Logs
+*.log
+
+# Temporary files
+tmp/
+temp/
+
+# Large reference folder
+strands-multiagent-cdk-main/
+
+# Any backup files
+*.bak
+*.backup
+
+# Documentation
+*.md
+README*
+
+# Test files
+tests/
+test_*.py
+
+# Jupyter notebooks
+*.ipynb
+
+# Database files
+*.db
+*.sqlite
+
+# Authentication files that shouldn't be in containers
+id_token.txt
+*.key
+*.pem
+
+# Deployment scripts (not needed in container)
+deploy.sh
+destroy.sh
+requirements-cdk.txt

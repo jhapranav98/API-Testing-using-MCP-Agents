@@ -1,0 +1,1082 @@
+color notation
+orange : endpoint
+blue : requirements
+===============================================================================================================================
+
+
+[] for auth
+
+POST : https://dyn-smartlinx-stg-api-man.azure-api.net/dyn-stg01/api/v1/jwt/auth
+
+we will get the Bearer token.
+
+Response
+{
+    "data": {
+        "response": {
+            "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJiaS1wdWJsaXNoZXIiOiJGYWxzZSIsInJvbGUiOiJTeXN0ZW0gQWRtaW5pc3RyYXRvciIsImlzcyI6IlNtYXJ0TGlueCIsImp0aSI6IjJjNGZiODRiLTY0NzgtNGJlNC1iNzBkLTU4NWY3NjJmMGQzOSIsImlhdCI6MTc1ODE5NjUwOSwic3ViIjoic3lzdGVtIiwiZ2l2ZW5fbmFtZSI6IlNtYXJ0bGlueCIsImFsaWFzIjoiYmhzc3RnIiwidXNlcl9pZCI6IjEiLCJsaW5rZWRfZW1wX2lkIjoiMCIsImVtYWlsIjoicWFAc21hcnRsaW54c29sdXRpb25zLmNvbSIsImF1ZCI6IlNtYXJ0TGlueCIsImV4cCI6MTc1ODIwMDEwOSwibmJmIjoxNzU4MTEwMTA5fQ.IvWD42NwLJ0WJjwFB9Y9p8iwyp8l2WFaNle--Q0wuAs",
+            "userApplications": [
+                {
+                    "id": 3,
+                    "name": "Scheduler",
+                    "displayName": "Schedule Optimizer"
+                },
+                {
+                    "id": 4,
+                    "name": "Time",
+                    "displayName": "Time & Attendance"
+                },
+                {
+                    "id": 8,
+                    "name": "Reports",
+                    "displayName": "Reports"
+                },
+                {
+                    "id": 12,
+                    "name": "PBJ",
+                    "displayName": "PBJ"
+                },
+                {
+                    "id": 14,
+                    "name": "BI",
+                    "displayName": "Spotlight"
+                },
+                {
+                    "id": 16,
+                    "name": "NGP",
+                    "displayName": "Next Gen Payroll"
+                },
+                {
+                    "id": -1,
+                    "name": "Common",
+                    "displayName": "Common"
+                }
+            ],
+            "userInfo": {
+                "userId": 1,
+                "password": null,
+                "remidersUnread": 0,
+                "messagesUnread": 2,
+                "resetPasswordOnNextLogin": 0,
+                "isSmartAdmin": true
+            }
+        },
+        "status": {
+            "code": 0,
+            "description": "Authentication valid."
+        }
+    },
+    "meta": null
+}
+
+
+============================================================================================================================
+
+[] sortoverride
+
+GET : https://dyn-smartlinx-stg-api-man.azure-api.net/dyn-stg01/api/v1/taappend/paycodeexceptions/sortoverride/?subscription-key=1b41764cf5ab4254ae3bd247ffbe423e
+
+params 
+key : subscription-key | Value : 1b41764cf5ab4254ae3bd247ffbe423e
+
+Bearer Token : required
+
+Headers
+
+key : x-slx-menuid | Value : 84
+key : x-slx-orglevelid | Value : 300968
+
+Response
+
+{
+    "data": [
+        {
+            "exceptionId": "28",
+            "overrideSortOrder": "1"
+        },
+        {
+            "exceptionId": "88",
+            "overrideSortOrder": "1"
+        },
+        {
+            "exceptionId": "133",
+            "overrideSortOrder": "1"
+        },
+        {
+            "exceptionId": "167",
+            "overrideSortOrder": "1"
+        },
+        {
+            "exceptionId": "222",
+            "overrideSortOrder": "1"
+        },
+        {
+            "exceptionId": "248",
+            "overrideSortOrder": "1"
+        },
+        {
+            "exceptionId": "360",
+            "overrideSortOrder": "1"
+        },
+        {
+            "exceptionId": "382",
+            "overrideSortOrder": "1"
+        },
+        {
+            "exceptionId": "383",
+            "overrideSortOrder": "1"
+        },
+        {
+            "exceptionId": "384",
+            "overrideSortOrder": "1"
+        },
+        {
+            "exceptionId": "385",
+            "overrideSortOrder": "1"
+        },
+        {
+            "exceptionId": "665",
+            "overrideSortOrder": "1"
+        },
+        {
+            "exceptionId": "711",
+            "overrideSortOrder": "1"
+        },
+        {
+            "exceptionId": "712",
+            "overrideSortOrder": "1"
+        },
+        {
+            "exceptionId": "782",
+            "overrideSortOrder": "1"
+        },
+        {
+            "exceptionId": "783",
+            "overrideSortOrder": "1"
+        },
+        {
+            "exceptionId": "784",
+            "overrideSortOrder": "1"
+        },
+        {
+            "exceptionId": "834",
+            "overrideSortOrder": "1"
+        },
+        {
+            "exceptionId": "835",
+            "overrideSortOrder": "1"
+        },
+        {
+            "exceptionId": "1036",
+            "overrideSortOrder": "1"
+        },
+        {
+            "exceptionId": "1037",
+            "overrideSortOrder": "1"
+        },
+        {
+            "exceptionId": "1038",
+            "overrideSortOrder": "1"
+        },
+        {
+            "exceptionId": "1087",
+            "overrideSortOrder": "1"
+        },
+        {
+            "exceptionId": "1096",
+            "overrideSortOrder": "1"
+        },
+        {
+            "exceptionId": "1174",
+            "overrideSortOrder": "1"
+        },
+        {
+            "exceptionId": "1175",
+            "overrideSortOrder": "1"
+        },
+        {
+            "exceptionId": "1306",
+            "overrideSortOrder": "1"
+        },
+        {
+            "exceptionId": "1346",
+            "overrideSortOrder": "1"
+        },
+        {
+            "exceptionId": "1380",
+            "overrideSortOrder": "1"
+        },
+        {
+            "exceptionId": "1411",
+            "overrideSortOrder": "1"
+        },
+        {
+            "exceptionId": "1441",
+            "overrideSortOrder": "1"
+        },
+        {
+            "exceptionId": "1476",
+            "overrideSortOrder": "1"
+        },
+        {
+            "exceptionId": "1552",
+            "overrideSortOrder": "1"
+        },
+        {
+            "exceptionId": "1601",
+            "overrideSortOrder": "1"
+        },
+        {
+            "exceptionId": "1644",
+            "overrideSortOrder": "1"
+        },
+        {
+            "exceptionId": "1684",
+            "overrideSortOrder": "1"
+        },
+        {
+            "exceptionId": "1754",
+            "overrideSortOrder": "1"
+        },
+        {
+            "exceptionId": "1859",
+            "overrideSortOrder": "1"
+        },
+        {
+            "exceptionId": "1960",
+            "overrideSortOrder": "1"
+        },
+        {
+            "exceptionId": "1961",
+            "overrideSortOrder": "1"
+        },
+        {
+            "exceptionId": "1962",
+            "overrideSortOrder": "1"
+        },
+        {..........................
+		          "exceptionId": "6174",
+            "overrideSortOrder": "271"
+        },
+        {
+            "exceptionId": "6363",
+            "overrideSortOrder": "272"
+        },
+        {
+            "exceptionId": "6364",
+            "overrideSortOrder": "273"
+        },
+        {
+            "exceptionId": "5652",
+            "overrideSortOrder": "274"
+        },
+        {
+            "exceptionId": "4670",
+            "overrideSortOrder": "275"
+        },
+        {
+            "exceptionId": "6350",
+            "overrideSortOrder": "276"
+        },
+        {
+            "exceptionId": "6348",
+            "overrideSortOrder": "277"
+        },
+        {
+            "exceptionId": "5618",
+            "overrideSortOrder": "278"
+        },
+        {
+            "exceptionId": "5421",
+            "overrideSortOrder": "279"
+        },
+        {
+            "exceptionId": "7488",
+            "overrideSortOrder": "280"
+        },
+        {
+            "exceptionId": "5728",
+            "overrideSortOrder": "281"
+        },
+        {
+            "exceptionId": "5731",
+            "overrideSortOrder": "282"
+        },
+        {
+            "exceptionId": "4232",
+            "overrideSortOrder": "283"
+        },
+        {
+            "exceptionId": "3644",
+            "overrideSortOrder": "284"
+        },
+        {
+            "exceptionId": "4243",
+            "overrideSortOrder": "285"
+        },
+        {
+            "exceptionId": "3925",
+            "overrideSortOrder": "286"
+        },
+        {
+            "exceptionId": "3759",
+            "overrideSortOrder": "287"
+        },
+        {
+            "exceptionId": "3787",
+            "overrideSortOrder": "288"
+        },
+        {
+            "exceptionId": "3792",
+            "overrideSortOrder": "289"
+        },
+        {
+            "exceptionId": "3648",
+            "overrideSortOrder": "290"
+        },
+        {
+            "exceptionId": "3616",
+            "overrideSortOrder": "291"
+        },
+        {
+            "exceptionId": "3594",
+            "overrideSortOrder": "292"
+        },
+        {
+            "exceptionId": "4234",
+            "overrideSortOrder": "293"
+        },
+        {
+            "exceptionId": "3620",
+            "overrideSortOrder": "294"
+        },
+        {
+            "exceptionId": "4290",
+            "overrideSortOrder": "295"
+        }
+    ]
+}
+
+
+===============================================================================================================================
+
+[] direct url for sortoveride requires orglevelid
+
+GET : https://dyn-smartlinx-stg-api-man.azure-api.net/dyn-stg01/api/v1/configuration/exceptions/300968
+
+Bearer Token : required
+
+{
+    "data": [
+        {
+            "id": 10613,
+            "description": "Early Arrival",
+            "department": "",
+            "color": 16777215,
+            "isPaid": false,
+            "isPbj": null,
+            "isAca": null,
+            "payDifferential": "Percentage of Base Pay",
+            "amount": "0",
+            "group": "Other",
+            "allocationType": "Allocation of Hours",
+            "interfaceIndicator": "",
+            "isException": false,
+            "organizationId": 1016,
+            "isPbjApplicable": false,
+            "useInTimesheets": false,
+            "isUsedInAccrualCalc": false,
+            "accrualPolicies": "",
+            "accrualType": "",
+            "allocationTypeId": 2,
+            "groupId": 0
+        },
+        {
+            "id": 10615,
+            "description": "Early Departure",
+            "department": "",
+            "color": 16777215,
+            "isPaid": false,
+            "isPbj": null,
+            "isAca": null,
+            "payDifferential": "Percentage of Base Pay",
+            "amount": "0",
+            "group": "Other",
+            "allocationType": "Allocation of Hours",
+            "interfaceIndicator": "",
+            "isException": false,
+            "organizationId": 1016,
+            "isPbjApplicable": false,
+            "useInTimesheets": false,
+            "isUsedInAccrualCalc": false,
+            "accrualPolicies": "",
+            "accrualType": "",
+            "allocationTypeId": 2,
+            "groupId": 0
+        },
+        {
+            "id": 10617,
+            "description": "Late Departure",
+            "department": "",
+            "color": 16777215,
+            "isPaid": false,
+            "isPbj": null,
+            "isAca": null,
+            "payDifferential": "Percentage of Base Pay",
+            "amount": "0",
+            "group": "Other",
+            "allocationType": "Allocation of Hours",
+            "interfaceIndicator": "",
+            "isException": false,
+            "organizationId": 1016,
+            "isPbjApplicable": false,
+            "useInTimesheets": false,
+            "isUsedInAccrualCalc": false,
+            "accrualPolicies": "",
+            "accrualType": "",
+            "allocationTypeId": 2,
+            "groupId": 0
+        },
+        {
+            "id": 10619,
+            "description": "No Lunch Taken",
+            "department": "",
+            "color": 16777215,
+            "isPaid": false,
+            "isPbj": null,
+            "isAca": null,
+            "payDifferential": "Percentage of Base Pay",
+            "amount": "0",
+            "group": "Other",
+            "allocationType": "Allocation of Hours",
+            "interfaceIndicator": "",
+            "isException": false,
+            "organizationId": 1016,
+            "isPbjApplicable": false,
+            "useInTimesheets": false,
+            "isUsedInAccrualCalc": false,
+            "accrualPolicies": "",
+            "accrualType": "",
+            "allocationTypeId": 2,
+            "groupId": 0
+        },
+        {
+            "id": 10621,
+            "description": "Classroom Training",
+            "department": "",
+            "color": 8421631,
+            "isPaid": true,
+            "isPbj": null,
+            "isAca": null,
+            "payDifferential": "Percentage of Base Pay",
+            "amount": "100",
+            "group": "Other",
+            "allocationType": "Based on Regular Hours",
+            "interfaceIndicator": "13",
+            "isException": false,
+            "organizationId": 1016,
+            "isPbjApplicable": true,
+            "useInTimesheets": false,
+            "isUsedInAccrualCalc": false,
+            "accrualPolicies": "",
+            "accrualType": "",
+            "allocationTypeId": 4,
+            "groupId": 0
+        },
+        {
+            "id": 10623,
+            "description": "Classroom Training P",
+            "department": "",
+            "color": 8421631,
+            "isPaid": true,
+            "isPbj": null,
+            "isAca": null,
+            "payDifferential": "Percentage of Base Pay",
+            "amount": "100",
+            "group": "Other",
+            "allocationType": "Based on Regular Hours",
+            "interfaceIndicator": "13",
+            "isException": false,
+            "organizationId": 1016,
+            "isPbjApplicable": true,
+            "useInTimesheets": false,
+            "isUsedInAccrualCalc": false,
+            "accrualPolicies": "",
+            "accrualType": "",
+            "allocationTypeId": 4,
+            "groupId": 0
+        },
+        {
+            "id": 10625,
+            "description": "Floor Orientation",
+            "department": "",
+            "color": 65280,
+            "isPaid": true,
+            "isPbj": null,
+            "isAca": null,
+            "payDifferential": "Percentage of Base Pay",
+            "amount": "100",
+            "group": "Other",
+            "allocationType": "Based on Regular Hours",
+            "interfaceIndicator": "13",
+            "isException": false,
+            "organizationId": 1016,
+            "isPbjApplicable": true,
+            "useInTimesheets": false,
+            "isUsedInAccrualCalc": false,
+            "accrualPolicies": "",
+            "accrualType": "",
+            "allocationTypeId": 4,
+            "groupId": 0
+        },
+        {
+            "id": 10629,
+            "description": "Late Arrival",
+            "department": "",
+            "color": 16777215,
+            "isPaid": false,
+            "isPbj": false,
+            "isAca": false,
+            "payDifferential": "Percentage of Base Pay",
+            "amount": "0",
+            "group": "Late",
+            "allocationType": "Allocation of Hours",
+            "interfaceIndicator": "",
+            "isException": false,
+            "organizationId": 1016,
+            "isPbjApplicable": false,
+            "useInTimesheets": false,
+            "isUsedInAccrualCalc": false,
+            "accrualPolicies": "",
+            "accrualType": "",
+            "allocationTypeId": 2,
+            "groupId": 1
+        },
+        {
+            "id": 10631,
+            "description": "Classroom Training OT",
+            "department": "",
+            "color": 4227327,
+            "isPaid": true,
+            "isPbj": null,
+            "isAca": null,
+            "payDifferential": "Percentage of Base Pay",
+            "amount": "150",
+            "group": "Overtime",
+            "allocationType": "Based on Regular Hours",
+            "interfaceIndicator": "58",
+            "isException": false,
+            "organizationId": 1016,
+            "isPbjApplicable": true,
+            "useInTimesheets": false,
+            "isUsedInAccrualCalc": false,
+            "accrualPolicies": "",
+            "accrualType": "",
+            "allocationTypeId": 4,
+            "groupId": 2
+        },
+        {
+            "id": 10633,
+            "description": "Classroom Training P OT",
+            "department": "",
+            "color": 16744703,
+            "isPaid": true,
+            "isPbj": null,
+            "isAca": null,
+            "payDifferential": "Percentage of Base Pay",
+            "amount": "150",
+            "group": "Overtime",
+            "allocationType": "Based on Regular Hours",
+            "interfaceIndicator": "58",
+            "isException": false,
+            "organizationId": 1016,
+            "isPbjApplicable": true,
+            "useInTimesheets": false,
+            "isUsedInAccrualCalc": false,
+            "accrualPolicies": "",
+            "accrualType": "",
+            "allocationTypeId": 4,
+            "groupId": 2
+        },
+        {
+            "id": 10635,
+            "description": "Floor Orientation OT",
+            "department": "",
+            "color": 32768,
+            "isPaid": true,
+            "isPbj": null,
+            "isAca": null,
+            "payDifferential": "Percentage of Base Pay",
+            "amount": "150",
+            "group": "Overtime",
+            "allocationType": "Based on Regular Hours",
+            "interfaceIndicator": "58",
+            "isException": false,
+            "organizationId": 1016,
+            "isPbjApplicable": true,
+            "useInTimesheets": false,
+            "isUsedInAccrualCalc": false,
+            "accrualPolicies": "",
+            "accrualType": "",
+            "allocationTypeId": 4,
+            "groupId": 2
+        },
+        {
+            "id": 10637,
+            "description": "OT40",
+            "department": "",
+            "color": 16744703,
+            "isPaid": true,
+            "isPbj": null,
+            "isAca": null,
+            "payDifferential": "Percentage of Base Pay",
+            "amount": "150",
+            "group": "Overtime",
+            "allocationType": "Based on Regular Hours",
+            "interfaceIndicator": "56",
+            "isException": false,
+            "organizationId": 1016,
+            "isPbjApplicable": true,
+            "useInTimesheets": false,
+            "isUsedInAccrualCalc": false,
+            "accrualPolicies": "",
+            "accrualType": "",
+            "allocationTypeId": 4,
+            "groupId": 2
+        },
+        {
+            "id": 10641,
+            "description": "Lunch 30 ",
+            "department": "",
+            "color": 16711808,
+            "isPaid": false,
+            "isPbj": null,
+            "isAca": null,
+            "payDifferential": "Percentage of Base Pay",
+            "amount": "0",
+            "group": "Meal Deduction",
+            "allocationType": "Applied to actual time",
+            "interfaceIndicator": "",
+            "isException": false,
+            "organizationId": 1016,
+            "isPbjApplicable": false,
+            "useInTimesheets": false,
+            "isUsedInAccrualCalc": false,
+            "accrualPolicies": "",
+            "accrualType": "",
+            "allocationTypeId": 1,
+            "groupId": 3
+        },
+        {
+            "id": 10643,
+            "description": "Lunch 30 2nd Shift",
+            "department": "",
+            "color": 16711808,
+            "isPaid": false,
+            "isPbj": null,
+            "isAca": null,
+            "payDifferential": "Percentage of Base Pay",
+            "amount": "0",
+            "group": "Meal Deduction",
+            "allocationType": "Applied to actual time",
+            "interfaceIndicator": "",
+            "isException": false,
+            "organizationId": 1016,
+            "isPbjApplicable": false,
+            "useInTimesheets": false,
+            "isUsedInAccrualCalc": false,
+            "accrualPolicies": "",
+            "accrualType": "",
+            "allocationTypeId": 1,
+            "groupId": 3
+        },
+        {
+            "id": 10645,
+            "description": "Bereavement",
+            "department": "",
+            "color": 16744576,
+            "isPaid": true,
+            "isPbj": null,
+            "isAca": null,
+            "payDifferential": "Percentage of Base Pay",
+            "amount": "100",
+            "group": "Absence",
+            "allocationType": "Allocation of Hours",
+            "interfaceIndicator": "72",
+            "isException": false,
+            "organizationId": 1016,
+            "isPbjApplicable": false,
+            "useInTimesheets": false,
+            "isUsedInAccrualCalc": false,
+            "accrualPolicies": "",
+            "accrualType": "",
+            "allocationTypeId": 2,
+            "groupId": 4
+        },
+        {
+            "id": 10647,
+            "description": "Jury Duty",
+            "department": "",
+            "color": 16744576,
+            "isPaid": true,
+            "isPbj": null,
+            "isAca": null,
+            "payDifferential": "Percentage of Base Pay",
+            "amount": "100",
+            "group": "Absence",
+            "allocationType": "Allocation of Hours",
+            "interfaceIndicator": "76",
+            "isException": false,
+            "organizationId": 1016,
+            "isPbjApplicable": false,
+            "useInTimesheets": false,
+            "isUsedInAccrualCalc": false,
+            "accrualPolicies": "",
+            "accrualType": "",
+            "allocationTypeId": 2,
+            "groupId": 4
+        },
+        {
+            "id": 10649,
+            "description": "Leave of Absence",
+            "department": "",
+            "color": 16744576,
+            "isPaid": false,
+            "isPbj": null,
+            "isAca": null,
+            "payDifferential": "Percentage of Base Pay",
+            "amount": "100",
+            "group": "Absence",
+            "allocationType": "Allocation of Hours",
+            "interfaceIndicator": "",
+            "isException": false,
+            "organizationId": 1016,
+            "isPbjApplicable": false,
+            "useInTimesheets": false,
+            "isUsedInAccrualCalc": false,
+            "accrualPolicies": "",
+            "accrualType": "",
+            "allocationTypeId": 2,
+            "groupId": 4
+        },
+        {
+            "id": 10651,
+            "description": "Paid Time Off",
+            "department": "",
+            "color": 16744576,
+            "isPaid": true,
+            "isPbj": null,
+            "isAca": null,
+            "payDifferential": "Percentage of Base Pay",
+            "amount": "100",
+            "group": "Absence",
+            "allocationType": "Allocation of Hours",
+            "interfaceIndicator": "31",
+            "isException": false,
+            "organizationId": 1016,
+            "isPbjApplicable": false,
+            "useInTimesheets": false,
+            "isUsedInAccrualCalc": false,
+            "accrualPolicies": "",
+            "accrualType": "",
+            "allocationTypeId": 2,
+            "groupId": 4
+        },
+        {
+            "id": 10653,
+            "description": "Unscheduled Absence",
+            "department": "",
+            "color": 33023,
+            "isPaid": false,
+            "isPbj": null,
+            "isAca": null,
+            "payDifferential": "Percentage of Base Pay",
+            "amount": "0",
+            "group": "Absence",
+            "allocationType": "Allocation of Hours",
+            "interfaceIndicator": "",
+            "isException": false,
+            "organizationId": 1016,
+            "isPbjApplicable": false,
+            "useInTimesheets": false,
+            "isUsedInAccrualCalc": false,
+            "accrualPolicies": "",
+            "accrualType": "",
+            "allocationTypeId": 2,
+            "groupId": 4
+        },
+        {
+            "id": 10661,
+            "description": "Holiday Worked New20",
+            "department": "",
+            "color": 16744448,
+            "isPaid": true,
+            "isPbj": null,
+            "isAca": null,
+            "payDifferential": "Percentage of Base Pay",
+            "amount": "200",
+            "group": "Holiday Worked",
+            "allocationType": "Based on Regular Hours",
+            "interfaceIndicator": "21",
+            "isException": false,
+            "organizationId": 1016,
+            "isPbjApplicable": true,
+            "useInTimesheets": false,
+            "isUsedInAccrualCalc": false,
+            "accrualPolicies": "",
+            "accrualType": "",
+            "allocationTypeId": 4,
+            "groupId": 18
+        },
+        {
+            "id": 10663,
+            "description": "DST",
+            "department": "",
+            "color": 0,
+            "isPaid": false,
+            "isPbj": null,
+            "isAca": null,
+            "payDifferential": "Percentage of Base Pay",
+            "amount": "0",
+            "group": "DST",
+            "allocationType": "Applied to actual time",
+            "interfaceIndicator": "",
+            "isException": false,
+            "organizationId": 1016,
+            "isPbjApplicable": false,
+            "useInTimesheets": false,
+            "isUsedInAccrualCalc": false,
+            "accrualPolicies": "",
+            "accrualType": "",
+            "allocationTypeId": 1,
+            "groupId": 20
+        },
+        {
+            "id": 10684,
+            "description": "Holiday Pay",
+            "department": "",
+            "color": 4259584,
+            "isPaid": true,
+            "isPbj": null,
+            "isAca": null,
+            "payDifferential": "Percentage of Base Pay",
+            "amount": "100",
+            "group": "Holiday Premium",
+            "allocationType": "Allocation of Hours",
+            "interfaceIndicator": "22",
+            "isException": false,
+            "organizationId": 1016,
+            "isPbjApplicable": false,
+            "useInTimesheets": false,
+            "isUsedInAccrualCalc": false,
+            "accrualPolicies": "",
+            "accrualType": "",
+            "allocationTypeId": 2,
+            "groupId": 22
+        },
+        {
+            "id": 11998,
+            "description": "Gov Safe and Sick",
+            "department": "",
+            "color": 16777088,
+            "isPaid": true,
+            "isPbj": null,
+            "isAca": null,
+            "payDifferential": "Percentage of Base Pay",
+            "amount": "100",
+            "group": "Absence",
+            "allocationType": "Allocation of Hours",
+            "interfaceIndicator": "GSS",
+            "isException": false,
+            "organizationId": 1016,
+            "isPbjApplicable": false,
+            "useInTimesheets": false,
+            "isUsedInAccrualCalc": false,
+            "accrualPolicies": "",
+            "accrualType": "",
+            "allocationTypeId": 2,
+            "groupId": 4
+        },
+        {
+            "id": 12269,
+            "description": "Intermittent FMLA Leave",
+            "department": "",
+            "color": 16777215,
+            "isPaid": false,
+            "isPbj": null,
+            "isAca": null,
+            "payDifferential": "Percentage of Base Pay",
+            "amount": "0",
+            "group": "Absence",
+            "allocationType": "Allocation of Hours",
+            "interfaceIndicator": "",
+            "isException": false,
+            "organizationId": 1016,
+            "isPbjApplicable": false,
+            "useInTimesheets": false,
+            "isUsedInAccrualCalc": false,
+            "accrualPolicies": "",
+            "accrualType": "",
+            "allocationTypeId": 2,
+            "groupId": 4
+        },
+        {
+            "id": 12318,
+            "description": "Pick Up 10.00",
+            "department": "",
+            "color": 16777088,
+            "isPaid": true,
+            "isPbj": null,
+            "isAca": null,
+            "payDifferential": "Fixed $ amount",
+            "amount": "$10.00",
+            "group": "Constraint",
+            "allocationType": "Allocation of Hours",
+            "interfaceIndicator": "959",
+            "isException": false,
+            "organizationId": 1016,
+            "isPbjApplicable": false,
+            "useInTimesheets": false,
+            "isUsedInAccrualCalc": false,
+            "accrualPolicies": "",
+            "accrualType": "",
+            "allocationTypeId": 2,
+            "groupId": 5
+        },
+        {
+            "id": 12596,
+            "description": "Remote Regular Earnings",
+            "department": "",
+            "color": 16744448,
+            "isPaid": true,
+            "isPbj": null,
+            "isAca": null,
+            "payDifferential": "Percentage of Base Pay",
+            "amount": "100",
+            "group": "Constraint",
+            "allocationType": "Based on Regular Hours",
+            "interfaceIndicator": "2",
+            "isException": false,
+            "organizationId": 1016,
+            "isPbjApplicable": true,
+            "useInTimesheets": false,
+            "isUsedInAccrualCalc": false,
+            "accrualPolicies": "",
+            "accrualType": "",
+            "allocationTypeId": 4,
+            "groupId": 5
+        },
+        {
+            "id": 12716,
+            "description": "Exempt-Remote RegEarnings",
+            "department": "",
+            "color": 16711935,
+            "isPaid": true,
+            "isPbj": null,
+            "isAca": null,
+            "payDifferential": "Percentage of Base Pay",
+            "amount": "100",
+            "group": "Other - Exempt",
+            "allocationType": "Allocation of Hours",
+            "interfaceIndicator": "2",
+            "isException": false,
+            "organizationId": 1016,
+            "isPbjApplicable": false,
+            "useInTimesheets": false,
+            "isUsedInAccrualCalc": false,
+            "accrualPolicies": "",
+            "accrualType": "",
+            "allocationTypeId": 2,
+            "groupId": 42
+        },
+        {
+            "id": 12965,
+            "description": "Day of Significance (Day Of)",
+            "department": "",
+            "color": 65280,
+            "isPaid": true,
+            "isPbj": null,
+            "isAca": null,
+            "payDifferential": "Percentage of Base Pay",
+            "amount": "50",
+            "group": "Other",
+            "allocationType": "Allocation of Hours",
+            "interfaceIndicator": "20",
+            "isException": false,
+            "organizationId": 1016,
+            "isPbjApplicable": false,
+            "useInTimesheets": false,
+            "isUsedInAccrualCalc": false,
+            "accrualPolicies": "",
+            "accrualType": "",
+            "allocationTypeId": 2,
+            "groupId": 0
+        },
+        {
+            "id": 12966,
+            "description": "Day of Significance (NB4)",
+            "department": "",
+            "color": 65280,
+            "isPaid": true,
+            "isPbj": null,
+            "isAca": null,
+            "payDifferential": "Percentage of Base Pay",
+            "amount": "50",
+            "group": "Other",
+            "allocationType": "Allocation of Hours",
+            "interfaceIndicator": "20",
+            "isException": false,
+            "organizationId": 1016,
+            "isPbjApplicable": false,
+            "useInTimesheets": false,
+            "isUsedInAccrualCalc": false,
+            "accrualPolicies": "",
+            "accrualType": "",
+            "allocationTypeId": 2,
+            "groupId": 0
+        }
+    ],
+    "meta": {
+        "actions": [
+            "edit",
+            "editExceptions",
+            "editPaycodestoAccrualMapping"
+        ],
+        "fields": []
+    }
+}
+
+=========================================================================================================================
+
+[] to safe paycodeexceptionssortoverride endpoint
+
+POST : https://dyn-smartlinx-stg-api-man.azure-api.net/dyn-stg01/api/v1/taappend/paycodeexceptions/paycodeexceptionssortoverride/?subscription-key=1b41764cf5ab4254ae3bd247ffbe423e
+
+
+Params
+key : subscription-key | Value : 1b41764cf5ab4254ae3bd247ffbe423e
+
+Bearer Token : required
+
+Headers
+
+key : x-slx-menuid | Value : 84
+key : x-slx-orglevelid | Value : 300968
+
+payload > body>json
+
+[
+    {
+        "exceptionId": 10663,
+        "overrideSortOrder": 2
+    },
+    {
+        "exceptionId": 10615,
+        "overrideSortOrder": 1
+    }
+]
+
+
+Response
+
+===========================================================================================================================

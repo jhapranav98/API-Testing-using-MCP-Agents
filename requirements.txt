@@ -1,0 +1,43 @@
+# AWS CDK and Infrastructure
+aws-cdk-lib>=2.0.0
+constructs>=10.0.0
+
+# Testing
+pytest>=7.0.0
+pytest-mock>=3.10.0
+
+# Core Agent Framework
+strands-agents>=0.1.0
+strands-agents-tools>=0.1.0
+mcp>=0.1.0
+
+# AWS & Environment
+boto3>=1.28.0
+python-dotenv>=1.0.0
+
+# FastAPI Backend
+fastapi>=0.104.0
+uvicorn>=0.23.2
+pydantic>=2.4.2
+python-multipart>=0.0.6
+
+# HTTP Requests
+requests>=2.31.0
+
+# Streamlit Frontend
+streamlit>=1.31.0
+
+# Healthcare & API Tools
+PyPDF2==3.0.1
+pdfplumber==0.11.7
+
+# Selenium for Web Automation
+selenium>=4.15.0
+
+# Monitoring and Observability
+langfuse>=2.0.0
+
+# Data Processing
+PyYAML>=6.0
+pandas>=2.0.0
+numpy>=1.24.0
